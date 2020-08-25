@@ -1,8 +1,8 @@
 /* Common properties */
 
 QWidget {
-    background-color: #1E1E1E;  /* #363636; */
-    color: #D4D4D4; /* #DDD; */
+    background-color: #363636;
+    color: #DDD;
 }
 
 IDAView {
@@ -68,10 +68,12 @@ QPushButton {
     font-family: 'Segoe UI', 'Helvetica Neue';
     text-align: center;
     min-height: 20px;
-    min-width: 50px;
-    border: none;
+    min-width: 60px;
+    font-size: 14px;
+    border: 1px;
     background: #363636;
     padding: 2px 14px;
+    border-radius: 4px;
 }
 
 QPushButton:hover {
@@ -87,19 +89,28 @@ QPushButton:pressed {
     border: 1px solid #215D9C;
 }
 
+EditContainer,
+ChooserContainer,
+QGroupBox,
+QListView,
 QTreeView {
     font-family: 'Segoe UI', 'Helvetica Neue';
-    border: 1px solid #1B1F20;
+    border: 1px solid #606060;
+    border-radius: 2px;
 }
 
 QTreeView:item {
     font-family: 'Segoe UI', 'Helvetica Neue';
     font-size: 14px;
     height: 27.5px;
+    background-color: #2F2F2F;
 }
 
-QTreeView:item:selected {
+QTreeView::item:selected,
+QListView::item:selected,
+QTableView::item:selected {
     background-color: #094771;
+    color: #ddd;
 }
 
 QLineEdit {
@@ -107,6 +118,7 @@ QLineEdit {
     font-family: 'Segoe UI', 'Helvetica Neue';
     border: 1px solid transparent;
     background: #272727;
+    font-size: 12px;
     color: #ccc;
     padding: 4px;
 }
@@ -119,15 +131,17 @@ QLineEdit:focus {
 
 QTabBar {
     font-family: 'Segoe UI', 'Helvetica Neue';
-    background-color: #252526;
+    background-color: #252525;
 }
 
 QTabBar:tab {
-    border-right: 1px solid #252526;
+    border-right: 1px solid #252525;
     background-color: #2D2D2D;
     font-size: 12px;
-    padding-left: 16px;
+    padding-left: 20px;
     padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 QTabBar:tab:selected {
@@ -137,11 +151,12 @@ QTabBar:tab:selected {
 QTabBar:close-button {
     /* For toolbar */
     icon-size: 20px;
-    padding: 0px;
+    padding: 1px;
 }
 
 QTabBar:close-button:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background-color: #00007F;
+    color: #FFFF00;
 }
 
 QTabBar:close-button:pressed {
@@ -174,37 +189,34 @@ QTableView {
     /* Table and headers */
     font-family: 'Segoe UI', 'Helvetica Neue';
     border: 1px solid #1B1F20;
-    background-color: #252526;
+    background-color: #252525;
 }
 
 QTableView:item {
     font-family: 'Segoe UI', 'Helvetica Neue';
-    font-size: 12px;
+    font-size: 14px;
     height: 27.5px;
 }
 
 QTableView:item:selected {
-    border: none !important;
+    border: none;
     background-color: #094771;
 }
 
 QTableView:section:item {
-    background: #1e1e1e !important;
+    background: #1e1e1e;
 }
 
-QTableView QHeaderView:section {
-    background-color: #2D2D2D;
+QHeaderView:section {
+    background-color: #444;
     border: none;
+    border-left: 1px solid #666;
+    border-right: 1px solid #333;
+    padding: 3px;
 }
 
-QTableView QHeaderView:section:horizontal {
-    padding: 5px;
-    border-left: 1px solid #2D3234;
-}
-
-QTableView QHeaderView:section:vertical {
-    padding: 0;
-    background: transparent;
+QHeaderView:horizontal:section {
+    min-height: 20px;
 }
 
 QTableView QTableCornerButton:section {
@@ -228,7 +240,6 @@ QListView:item:selected {
 
 QCheckBox {
     background-color: #D4D4D4;
-    /* background-color: rgba(0, 0, 0, 0); */
 }
 
 QCheckBox,
@@ -618,7 +629,7 @@ CustomIDAMemo[debugging="true"] {
     qproperty-line-pfx-extern: #FF55FF;
     qproperty-line-pfx-current-item: transparent;
     qproperty-line-pfx-current-line: yellow;
-    qproperty-line-bgovl-current-line: rgba(0, 0, 0, 0.149020);
+    qproperty-line-bgovl-current-line: rgba(144, 144, 144, 0.137255);
     qproperty-line-bgovl-current-ip: rgba(0, 195, 255, 0.447059);
     qproperty-line-bgovl-trace: rgba(255, 255, 0, 0.200000);
     qproperty-line-bgovl-trace-ovl: rgba(255, 188, 180, 0.400000);
@@ -673,7 +684,7 @@ CustomIDAMemo[hints="true"] {
     qproperty-line-pfx-extern: #FF55FF;
     qproperty-line-pfx-current-item: transparent;
     qproperty-line-pfx-current-line: yellow;
-    qproperty-line-bgovl-current-line: rgba(0, 0, 0, 0.149020);
+    qproperty-line-bgovl-current-line: rgba(144, 144, 144, 0.137255);
     qproperty-line-bgovl-trace: rgba(255, 255, 0, 0.200000);
     qproperty-line-bgovl-trace-ovl: rgba(255, 188, 180, 0.400000);
     qproperty-line-bgovl-extra-1: rgba(80, 255, 80, 0.247059);
