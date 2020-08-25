@@ -22,3 +22,6 @@ Tạo thư mục con tên nào đó trong thư mục themes của IDA, quăng fi
 Trong IDA, vào Options - Color sẽ thấy tên theme là tên thư mục đã tạo.
 
 Cảm ơn đã dùng thử.
+
+Hoặc các bạn có thể tham khảo color, theme của William Ballethin ở đây:
+https://github.com/williballenthin/idawilli/tree/master/themes
