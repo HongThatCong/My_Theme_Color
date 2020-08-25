@@ -17,11 +17,13 @@ Vào Options - Color - Import vào
 # theme.css:
 Dùng cho IDA >= 7.3
 
-Tạo thư mục con tên nào đó trong thư mục themes của IDA, quăng file theme.css này vào đó
+Tạo thư mục con tên gì đó theo ý các bạn trong thư mục "IDAxxx"\themes của IDA, quăng file theme.css này vào đó
 
 Trong IDA, vào Options - Color sẽ thấy tên theme là tên thư mục đã tạo.
 
+Khi các bạn thay đổi màu với theme đang chọn, trong thư mục %IDAUSRDIR% sẽ có thư mục themes\ten_theme\user.css ghi lại các modify các bạn đã chọn.
+
 Cảm ơn đã dùng thử.
 
-Hoặc các bạn có thể tham khảo color, theme của William Ballethin ở đây:
+Hoặc các bạn có thể tham khảo các color, theme của William Ballethin ở đây:
 https://github.com/williballenthin/idawilli/tree/master/themes
