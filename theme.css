@@ -35,15 +35,15 @@ QToolBar QWidget {
 }
 
 QToolBar:handle:horizontal {
-    padding-right: 10px;
+    padding-right: 4px;
     padding-left: 0;
-    width: 10px;
+    width: 8px;
 }
 
 QToolBar:handle:vertical {
-  padding-bottom: 10px;
+  padding-bottom: 4px;
   padding-left: 0;
-  height: 10px;
+  height: 8px;
 }
 
 IDAMainWindow > QStatusBar {
@@ -73,7 +73,7 @@ QPushButton {
     border: 1px;
     background: #363636;
     padding: 2px 14px;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 QPushButton:hover {
@@ -138,8 +138,8 @@ QTabBar:tab {
     border-right: 1px solid #252525;
     background-color: #2D2D2D;
     font-size: 12px;
-    padding-left: 20px;
-    padding-right: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
     padding-top: 4px;
     padding-bottom: 4px;
 }
@@ -302,8 +302,10 @@ QComboBox QLineEdit {
 QComboBox:drop-down {
     subcontrol-origin: padding;
     subcontrol-position: top right;
-    border: none;
     width: 20px;
+    border-left-width: 1px;
+    border-left-color: #666;
+    border-left-style: solid;
 }
 
 QComboBox:drop-down:editable {
@@ -314,6 +316,7 @@ QComboBox:drop-down:editable {
 }
 
 QComboBox:down-arrow {
+    image: url("$RELPATH/expand.png");
     margin: 0;
 }
 
@@ -350,6 +353,7 @@ QTextEdit {
     /* Multiple line edit */
     background-color: #2D3234;  /*  #2d2d2d;*/
     border: 1px solid #1B1F20;  /* #363636; */
+    font-size: 12px;
     border-radius: 2px;
 }
 
